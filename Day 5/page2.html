@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Your Entries</title>
+</head><style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body{ 
+margin-left:20px;
+color:white;
+font-family: 'Helvetica', 'Arial', sans-serif;
+font-size:18px;
+background-color: #222733;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: white;
+  border-radius:5px;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+    </style>
+
+<body>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="courses.html">Courses</a></li>
+  <li><a href="marks.html">Marks</a></li>
+  <li><a href="page1.html">Register</a></li>
+</ul> 
+<p style = "font-family:georgia,garamond,serif;font-size:32px;font-style:italic;color:white;">Here is the information you provided: </p>
+  <br><br><br><b>Your name: </b>
+  <script language="JavaScript">
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var name = url.searchParams.get("name");
+    var tel = url.searchParams.get("mob");
+    var course = url.searchParams.get("course");
+    var desc = url.searchParams.get("desc");
+    var subject = url.searchParams.get("sub");
+    document.write(name);
+  </script>
+  <br>
+  <br><b>Your contact number : </b>
+  <script Language="JavaScript">
+    document.write(tel);
+  </script>
+  <br>
+  <br><b>Your selected course: </b>
+  <script Language="JavaScript">
+    document.write(course);
+  </script>
+  <br>
+  <br><b>Details: </b>
+  <script Language="JavaScript">
+    document.write(desc);
+  </script>
+  <br>
+  <br><b>Your selected subject: </b>
+  <script Language="JavaScript">
+    document.write(subject);
+  </script>
+</body>
+
+</html>

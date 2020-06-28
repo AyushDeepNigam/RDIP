@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Register</title>
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body{ 
+margin-left:15px;
+color:white;
+font-family: 'Helvetica', 'Arial', sans-serif;
+font-size:18px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://www.artranked.com/images/10/10efbb5cba3f54427ec775f07031aa89.jpg);
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: white;
+  border-radius:5px;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+    </style>
+
+<body>
+ <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="courses.html">Courses</a></li>
+  <li><a href="marks.html">Marks</a></li>
+  <li><a href="page1.html">Register</a></li>
+</ul> 
+     <p style = "font-family:georgia,garamond,serif;font-size:24px;font-style:italic;color:white;">Enter details</p>
+
+    <form action="page2.html" target="_blank">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value=""><br><br>
+
+    <label for="mob">Phone Number:</label><br>
+    <input type="tel" id="mob" name="mob" value=""><br><br>
+
+    Choice of course:<br>
+    <input type="radio" value="Bachelors" name="course"> Bachelors <br>
+    <input type="radio" value="Masters" name="course"> Masters<br><br>
+    Description : <br>
+    <textarea cols="80" rows="5" name="desc" placeholder="Your text here" required>
+</textarea> <br><br>
+    Subject Interests:<br>
+    <input type="checkbox" value="Object Oriented Programming" name="sub"> Object Oriented Programming <br>
+    <input type="checkbox" value="Data Structures" name="sub"> Data Structures<br>
+    <input type="checkbox" value="Algorithms" name="sub"> Algorithms <br><br>
+    <input type="submit" value="Submit Form">
+  </form>
+</body>
+
+</html>
