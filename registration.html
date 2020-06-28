@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+</head>
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #ced2d9;
+  border-radius:5px;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  background-color: #f0f1f5;
+
+  width: 20%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=tel], select, textarea {
+background-color: #f0f1f5;
+  width: 20%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+background-color: #f0f1f5;
+  width: 20%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label{
+
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+input {
+  display: inline-block;
+  float: center;
+}
+  ul.nav {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li.nav {
+    float: left;
+  }
+
+  li.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li.nav a:hover {
+    background-color: #111;
+  }
+
+  body {
+  
+    margin-left: 15px;
+    color: black;
+
+    font-size: 18px;
+  }
+  p{
+  font-family: "serif,Times New Roman", Times;
+  font-size:20px;
+  }
+#profile{
+ margin-right: 50px;
+ margin-top: -50px;
+ }
+  #logo {
+    float: left;
+    margin: 0 0 0 0px;
+  }
+
+  #rdip {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: "serif,Times New Roman", Times;
+    font-weight: bold;
+  }
+  table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 10px 20px 10px 20px;
+  text-align:center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
+}
+  
+</style>
+
+<body>
+  <a href="https://www.iiit.ac.in/"><img alt="IIT H" src="https://www.iiit.ac.in/img/iiit-new.png" width="150" height="77" id="logo" />
+    <a href="https://serc.iiit.ac.in/rdip" style="text-align:right">
+      <p style="font-size:32px;font-style:bold;text-decoration: underline;" id="rdip">RDIP</p>
+    </a><br><br><br><br><br>
+    <ul class="nav">
+      <li class="nav"><a href="homepage.html">Home</a></li>
+      <li class="nav"><a href="registration.html">Registration Form</a></li>
+    </ul><br><br>
+ 
+     <p style = "font-family:georgia,garamond,serif;font-size:24px;font-style:italic;color:white;">Enter details</p>
+
+    <div><form action="details.html" target="_blank" >
+    <label for="name">First Name:</label>
+    <input type="text" id="name" name="name" value="" required><br><br>
+	<label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="" required><br><br>
+
+    <label for="mob">Phone Number:</label>
+    <input type="tel" id="mob" name="mob" value="" required><br><br>
+
+    Gender:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" value="Male" name="gender"> Male
+	<input type="radio" value="Female" name="gender"> Female
+    <input type="radio" value="Others" name="gender"> Others<br><br>
+    
+    Reason for RDIP:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="checkbox" value="html" name="sub">HTML
+    <input type="checkbox" value="css" name="sub">CSS
+    <input type="checkbox" value="javascript" name="sub">Javascript<br><br>
+	<label for="college">College:</label>
+    <input type="text" id="name" name="college" value="" required><br><br>
+	 <input type="checkbox" value="check name="check" required>&emsp;I declare above details given by me are true.<br><br>&emsp;&emsp;&emsp;
+    <input type="submit" value="Submit Form">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<input type="reset" value="Reset">
+  </form></div>
+</body>
+
+</html>
