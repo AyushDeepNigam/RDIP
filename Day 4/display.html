@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Your Entries</title>
+</head>
+
+<body>
+  <h2>Here is the information you provided: </h2>
+  <b>Your name: </b>
+  <script language="JavaScript">
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var name = url.searchParams.get("name");
+    var tel = url.searchParams.get("mob");
+    var course = url.searchParams.get("course");
+    var desc = url.searchParams.get("desc");
+    var subject = url.searchParams.get("sub");
+    document.write(name);
+  </script>
+  <br>
+  <b>Your contact number : </b>
+  <script Language="JavaScript">
+    document.write(tel);
+  </script>
+  <br>
+  <b>Your selected course: </b>
+  <script Language="JavaScript">
+    document.write(course);
+  </script>
+  <br>
+  <b>Details: </b>
+  <script Language="JavaScript">
+    document.write(desc);
+  </script>
+  <br>
+  <b>Your selected subject: </b>
+  <script Language="JavaScript">
+    document.write(subject);
+  </script>
+</body>
+
+</html>
