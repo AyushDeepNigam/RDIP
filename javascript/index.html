@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Javascript</title>
+  <script src="javascript.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <table id="table">
+    <table border="1|0">
+      <thead>
+        <tr>
+          <td>Image Processing</td>
+          <td>Data Compression</td>
+          <td>Machine Learning</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <script>
+              document.write(ip);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(dc);
+            </script>
+          </td>
+          <td>
+            <script>
+              document.write(ml);
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>Total:</td>
+          <td colspan="2">
+            <script>
+              document.write(tot);
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td>Average:</td>
+          <td colspan="2">
+            <script>
+              document.write(avg);
+            </script>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      document.write("<br><h1>5) Functions and Activity</h1><br>Provided values a = 5 and b = 2<br>Multiplied: ");
+
+      function multiply(a, b = 1) {
+        return a * b;
+      }
+      document.write(multiply(5, 2));
+      console.log(multiply(5));
+    </script>
+
+    <h1>7) Contains only alphabets</h1>
+    <form name="form1" action="#"> <input type='text' name='text1' /> <input type="submit" name="submit" value="Submit" onclick="allLetter(document.form1.text1)" /> </form>
+    <h1>8) Math functions </h1>
+    <script>
+      document.write("Power (3): ", Math.pow(3, 2));
+      document.write("<br>Square root (9): ", Math.sqrt(9));
+      document.write("<br>Absolute Value (-3): ", Math.abs(-3));
+      num = Math.random();
+      document.write("<br>Random Number: ", num);
+      document.write("<br>Ceil: ", Math.ceil(num));
+      document.write("<br>Round: ", Math.round(num));
+      document.write("<br>Floor: ", Math.floor(num));
+      document.write("<br>Sin(", num, "): ", Math.sin(num));
+      document.write("<br>Tanh(", num, "): ", Math.tanh(num));
+    </script>
+    <h1>9) Form validation</h1>
+
+    <form name="phnum" action="page2.html" onsubmit="return validateForm()" id="frm">
+      Number: <input type="text" name="num" required><span id="number"></span><br>
+      <p>Subjects</p>
+      <dd>
+
+        <input id="c1" type="checkbox" value="Data Structures" name="ch1">Data Structures
+
+        <input id="c2" type="checkbox" value="Algorithms" name="ch2">Algorithms
+
+      </dd><br>
+      <input type="submit" value="Done!" id="bttn">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Your Entries</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <p style="font-family:georgia,garamond,serif;font-size:32px;font-style:italic;">Here is the information you provided: </p>
+  <br><br><br><b></b>
+  <script language="JavaScript">
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var tel = url.searchParams.get("num");
+    var subject = url.searchParams.get("ch1");
+    var subjects = url.searchParams.get("ch2");
+  </script>
+  <br>
+  <br><b>Your number : </b>
+  <script Language="JavaScript">
+    document.write(tel);
+  </script>
+  <br>
+  <br><b>Your selected subject : </b>
+  <script Language="JavaScript">
+    if (subject === "Data Structures") {
+      document.write(" ",subject);
+    }
+    if (subjects === "Algorithms") {
+      document.write(" ",subjects);
+    }
+  </script>
+</body>
+
+</html>

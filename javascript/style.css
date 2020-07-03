@@ -1,0 +1,52 @@
+
+  body{ 
+  margin-left:15px;
+  color:black;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size:18px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://www.artranked.com/images/10/10efbb5cba3f54427ec775f07031aa89.jpg); */
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgb(201, 205, 209);
+    border-radius:5px;
+    border: none;
+    color: black;
+    padding: 6px 12px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  table {
+  text-align: right;
+    border: 2px solid #FFFFFF;
+    width: 50%;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+    
+  }
+  table tbody td {
+    font-size: 13px;
+  }
+  table td:nth-child(even) {
+  color: #222733;
+    background: #EBEBEB;
+  }
+  table thead {
+   color: #222733;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    border-bottom: 4px solid #333333;
+    text-align: left;
+  }
+  table thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222733;
+    border-left: 2px solid ;color: #222733;
+  }
+  
