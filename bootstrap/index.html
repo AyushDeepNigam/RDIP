@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#box1").fadeToggle();
+    $("#box2").fadeToggle("slow");
+    $("#box3").fadeToggle(3000);
+  });
+});
+</script>
+
+ 
+<style> 
+
+div{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+button{
+  background-color: whitesmoke;
+}
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:rgb(30, 44, 243);
+  
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:rgb(125, 7, 136);
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+<div class="divClass1" style="width:200px;">Double Click</div><br><br>
+<hr>
+<footer>
+<button>Click to fade in/out boxes</button>
+<p><div id="box1" style="width:800px;height:80px;background-color:rgb(131, 5, 5);">A Quick Brown</div>
+<div id="box2" style="width:900px;height:80px;background-color:rgb(7, 82, 14);">Fox Jumps Over</div>
+<div id="box3" style="width:1000px;height:80px;background-color:rgb(8, 36, 99);">The lazy Dawg</div>
+</p>
+</footer>
+</body>
+</html>
