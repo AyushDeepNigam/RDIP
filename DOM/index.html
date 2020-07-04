@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOM</title>
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>1) Show Date</h1>
+  Date: <input type="date" id="date">
+  <p>Display Date</p>
+  <button onclick="dispDate()">Show Date</button>
+
+  <h1>2) Events</h1>
+  <button onclick="dispMessage()" id="chTime">Check Current Time</button>
+  <p id="time"></p>
+
+  <h1>3) Control Flow and Fibonacci</h1>
+  <p>To get Fibonacci sequence enter a number between 10 and 100.</p>
+  <input type="text" placeholder="Enter a number" id="numInput">
+  <button type="button" onclick="checkNum();">Here's my mumber</button>
+
+  <h1>4) Exception Handling</h1><br>Enter a number to check if it is between 10 and 100.
+  <p>Please input a number between 10 and 100:</p>
+  <p id="check"></p>
+  <input id="exp" type="text">
+  <button type="button" onclick="checkVal()">Test Input</button>
+
+  <h1>5) Strings</h1>
+  <p>HTML is the most basic building block of the Web.</p>
+  <p>Find: <button onclick="word(6);" id="">6th</button>
+    <button onclick="word(7);" id="">7th</button>
+    <button onclick="word(10);" id="">10th</button> word.</p>
+
+</body>
+
+</html>
