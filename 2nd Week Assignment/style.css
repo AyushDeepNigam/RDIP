@@ -1,0 +1,142 @@
+body {
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+ul.nav {
+  font-family: "Helvetica", "Arial", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.nav a:hover {
+  background-color: #111;
+}
+
+div.centerContent {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+div.calc {
+  width: 40%;
+  float: right;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: #444;
+  padding: 7px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 90%;
+}
+.butt {
+  background-color: white;
+  border: none;
+  color: #444;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 0px 0px;
+  cursor: pointer;
+  width: 10%;
+}
+.screenInput {
+  width: 220px;
+  margin: 5px;
+  font-size: 25px;
+  padding: 5px;
+  border-color: rgb(150, 150, 150);
+}
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table td {
+  border: 5px solid #444;
+}
+input:focus {
+  outline: none;
+  color: black;
+}
+
+#leftDiv {
+  width:290px;
+  height:100px;
+  /* border:1px solid red; */
+  margin-right:0px;
+  float:left;
+}
+
+#rightDiv {
+  width:350px;
+  height:200px;
+  /* border:1px solid red; */
+  margin-right:0px;
+  float:left;
+}
+
+.formInp {
+  width:200px;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150, 100);border-color: rgb(150, 150, 150, 100);
+  background-color: rgb(250, 250, 250);
+
+}
+
+.butto{
+  padding: 1px 7px 1px 7px;
+  border-width: 1px;
+  border-color: rgb(150, 150, 150, 100);
+  background-color: rgb(245, 245, 245);
+  border-color: #444;
+}
+
+#gameDiv {
+  width:300px;
+  height:300px;
+  /* border:1px solid red; */
+  margin-right:0px;
+  float: right;;
+}
+
+.gameBt{
+  font-size: 20px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  border-color: rgb(250, 250, 250);
+  padding-bottom: 2px;
+  color: #333;
+  outline: none;
+  
+}

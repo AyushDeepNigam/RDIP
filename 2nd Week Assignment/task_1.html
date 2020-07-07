@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+  <div class="centerContent">
+    <ul class=" nav">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="task_1.html">Task 1</a></li>
+      <li class="nav"><a href="task_2.html">Task 2</a></li>
+      <li class="nav"><a href="task_3.html">Task 3</a></li>
+      <li class="nav"><a href="task_4.html">Task 4</a></li>
+    </ul><br><br>
+    <h1>A basic calculator.</h1>
+    <br>
+  </div>
+
+  <div class="calc">
+    <form name="screen">
+      <input class="screenInput" name="screenInput" type="text" id=calInp> <input class="butt" type="button" value="(-)" onclick="neg()">
+    </form>
+    <table>
+      <tr>
+        <td><input class="button" type="button" value="C" onclick="clearr(0)"></td>
+        <td><input class="button" type="button" value="/" onclick="div()"></td>
+        <td><input class="button" type="button" value="x" onclick="mul()"></td>
+        <td><input class="button" type="button" value="-" onclick="sub('-')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="7" onclick="input(7)"></td>
+        <td><input class="button" type="button" value="8" onclick="input(8)"></td>
+        <td><input class="button" type="button" value="9" onclick="input(9)"></td>
+        <td><input class="button" type="button" value="+" onclick="add()"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="4" onclick="input(4)"></td>
+        <td><input class="button" type="button" value="5" onclick="input(5)"></td>
+        <td><input class="button" type="button" value="6" onclick="input(6)"></td>
+        <td><input class="button" type="button" value="%" onclick="per('%')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="1" onclick="input(1)"></td>
+        <td><input class="button" type="button" value="2" onclick="input(2)"></td>
+        <td><input class="button" type="button" value="3" onclick="input(3)"></td>
+        <td><input class="button" type="button" value="||" onclick="absolute('')"></td>
+      </tr>
+      <tr>
+        <td><input class="button" type="button" value="0" onclick="input(0)"></td>
+        <td><input class="button" type="button" value="." onclick="input('.')"></td>
+        <td><input class="button" type="button" value="&#8730;" onclick="sqroot('')"></td>
+        <td><input class="button" type="button" value="=" onclick="solve()"></td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+
+</html>

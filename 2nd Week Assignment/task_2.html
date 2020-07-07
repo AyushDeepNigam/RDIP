@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css"">
+  <script type=" text/javascript" src="javascript.js">
+  </script>
+</head>
+
+<body>
+  <div class=" centerContent">
+    <ul class=" nav">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="task_1.html">Task 1</a></li>
+      <li class="nav"><a href="task_2.html">Task 2</a></li>
+      <li class="nav"><a href="task_3.html">Task 3</a></li>
+      <li class="nav"><a href="task_4.html">Task 4</a></li>
+    </ul><br><br>
+
+    <h1>Form Validation.</h1><br>
+    <div id='leftDiv'>
+      Enter Full Name:<br>
+      10-Digit Mobile Number:<br>
+      Email-Id:<br>
+    </div>
+
+    <div id='rightDiv' style="float: right;">
+      <form class="valForm">
+        <input class=formInp type="text" id="valName" name="valName"><br>
+        <input class=formInp type="text" id="valPhn" name="valPhn"><br>
+        <input class=formInp type="email" id="valMail" name="valMail"><br><br>
+        <button class=butto type="submit" id="valSub" onclick="valForm()">Submit</button>
+      </form>
+    </div>
+    <div>
+      <p id="valNm"></p>
+      <p id="valPh"></p>
+      <p id="valEm"></p>
+    </div>
+
+  </div>
+</body>
+
+</html>
